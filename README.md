@@ -5,7 +5,7 @@
   <img src="https://files.catbox.moe/dmz2fn.jpg" width="300" alt="Elaina Bail Banner" />
 
 ---
-`bug / Error Chat me on Whatsapp`
+`If a bug or error occurs, contact me on WhatsApp. `
  
  [![WhatsApp](https://img.shields.io/badge/Chat%20on-WhatsApp-25D366?logo=whatsapp&logoColor=white)](https://wa.me/6285282530851)
  
