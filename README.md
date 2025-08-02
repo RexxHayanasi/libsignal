@@ -15,6 +15,8 @@ Overview
 A ratcheting forward secrecy protocol that works in synchronous and
 asynchronous messaging environments.
 
+This Libsignal project was developed by myself `RexxHayanasi`
+Libsignal Fork Results - `@whiskeysockets`
 
 PreKeys
 --------
