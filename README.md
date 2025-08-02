@@ -4,9 +4,6 @@
 
   <img src="https://files.catbox.moe/dmz2fn.jpg" width="300" alt="Elaina Bail Banner" />
   
-[![npm](https://img.shields.io/npm/v/@rexxhayanasi/elaina-libsignal.svg)](https://www.npmjs.com/package/@rexxhayanasi/elaina-libsignal)
-[![npm](https://img.shields.io/npm/l/@rexxhayanasi/elaina-libsignal.svg)](https://github.com/ForstaLabs/@rexxhayanasi/elaina-libsignal)
-
 
 Overview
 --------
