@@ -1,10 +1,12 @@
-libsignal-node
-========
-Signal protocol implementation for Node.js based on
-[libsignal-protocol-javascript](https://github.com/WhisperSystems/libsignal-protocol-javascript).
+<div align="center">
+  <h1>✨ @rexxhayanasi/elaina-libsignal</h1>
+  <p><em>Signal protocol implementation for Node.js based on
+[libsignal-protocol-javascript](https://github.com/WhisperSystems/libsignal-protocol-javascript)✨</em></p>
 
-[![npm](https://img.shields.io/npm/v/libsignal.svg)](https://www.npmjs.com/package/libsignal)
-[![npm](https://img.shields.io/npm/l/libsignal.svg)](https://github.com/ForstaLabs/libsignal-node)
+  <img src="https://files.catbox.moe/dmz2fn.jpg" width="300" alt="Elaina Bail Banner" />
+  
+[![npm](https://img.shields.io/npm/v/libsignal.svg)](https://www.npmjs.com/package/@rexxhayanasi/elaina-libsignal)
+[![npm](https://img.shields.io/npm/l/@rexxhayanasi/elaina-libsignal.svg)](https://github.com/ForstaLabs/@rexxhayanasi/elaina-libsignal)
 
 
 Overview
