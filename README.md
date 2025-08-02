@@ -1,7 +1,6 @@
 <div align="center">
   <h1>✨ @rexxhayanasi/elaina-libsignal</h1>
-  <p><em>Signal protocol implementation for Node.js based on
-[libsignal-protocol-javascript](https://github.com/WhisperSystems/libsignal-protocol-javascript)✨</em></p>
+  <p><em>Signal protocol implementation for Node.js based on Javascript ✨</em></p>
 
   <img src="https://files.catbox.moe/dmz2fn.jpg" width="300" alt="Elaina Bail Banner" />
   
