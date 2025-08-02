@@ -6,6 +6,7 @@
 
 ---
 `bug / Error Chat me on Whatsapp`
+ 
  [![WhatsApp](https://img.shields.io/badge/Chat%20on-WhatsApp-25D366?logo=whatsapp&logoColor=white)](https://wa.me/6285282530851)
  
 
