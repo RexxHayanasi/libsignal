@@ -3,6 +3,7 @@
   <p><em>Signal protocol implementation for Node.js based on Javascript ✨</em></p>
 
   <img src="https://files.catbox.moe/dmz2fn.jpg" width="300" alt="Elaina Bail Banner" />
+
  [![WhatsApp](https://img.shields.io/badge/Chat%20on-WhatsApp-25D366?logo=whatsapp&logoColor=white)](https://wa.me/6285282530851)
  
 
