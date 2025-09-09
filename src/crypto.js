@@ -5,19 +5,15 @@
 const nodeCrypto = require('crypto');
 const assert = require('assert');
 
-// Polyfill untuk browser (gunakan `crypto.subtle`) jika diperlukan
-const isBrowser = typeof window !== 'undefined' && typeof window.crypto !== 'undefined';
-const subtle = isBrowser ? window.crypto.subtle : null;
 
-// Utility
 function assertBuffer(value) {
     if (!(value instanceof Buffer)) {
-        throw TypeError(`Expected Buffer instead of: ${value?.constructor?.name || typeof value}`);
+        throw TypeError(`Expected Buffer instead of: ${value.constructor.name}`);
     }
     return value;
 }
 
-// AES-256-CBC Encrypt
+
 function encrypt(key, data, iv) {
     assertBuffer(key);
     assertBuffer(data);
@@ -26,7 +22,7 @@ function encrypt(key, data, iv) {
     return Buffer.concat([cipher.update(data), cipher.final()]);
 }
 
-// AES-256-CBC Decrypt
+
 function decrypt(key, data, iv) {
     assertBuffer(key);
     assertBuffer(data);
@@ -35,7 +31,7 @@ function decrypt(key, data, iv) {
     return Buffer.concat([decipher.update(data), decipher.final()]);
 }
 
-// SHA256 HMAC
+
 function calculateMAC(key, data) {
     assertBuffer(key);
     assertBuffer(data);
@@ -44,7 +40,7 @@ function calculateMAC(key, data) {
     return Buffer.from(hmac.digest());
 }
 
-// SHA512 Hash
+
 function hash(data) {
     assertBuffer(data);
     const sha512 = nodeCrypto.createHash('sha512');
@@ -52,8 +48,10 @@ function hash(data) {
     return sha512.digest();
 }
 
-// HKDF-like Derivation (RFC 5869)
+
+// Salts always end up being 32 bytes
 function deriveSecrets(input, salt, info, chunks) {
+    // Specific implementation of RFC 5869 that only returns the first 3 32-byte chunks
     assertBuffer(input);
     assertBuffer(salt);
     assertBuffer(info);
@@ -80,7 +78,6 @@ function deriveSecrets(input, salt, info, chunks) {
     return signed;
 }
 
-// MAC Verification
 function verifyMAC(data, key, mac, length) {
     const calculatedMac = calculateMAC(key, data).slice(0, length);
     if (mac.length !== length || calculatedMac.length !== length) {
@@ -91,7 +88,6 @@ function verifyMAC(data, key, mac, length) {
     }
 }
 
-// Export Function
 module.exports = {
     deriveSecrets,
     decrypt,
